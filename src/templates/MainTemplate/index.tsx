@@ -1,4 +1,4 @@
-import { Conteiner } from '../../components/Container'
+import { Container } from '../../components/Container'
 import { Logo } from '../../components/Logo'
 import { Menu } from '../../components/Menu'
 import { Footer } from '../../components/Footer'
@@ -10,16 +10,16 @@ type MainTemplateProps = {
 export function MainTemplate({ children }: MainTemplateProps) {
   return (
     <>
-      <Conteiner>
+      <Container>
         <Logo />
-      </Conteiner>
-      <Conteiner>
+      </Container>
+      <Container>
         <Menu />
-      </Conteiner>
+      </Container>
       {children}
-      <Conteiner>
+      <Container>
         <Footer />
-      </Conteiner>
+      </Container>
     </>
   )
 }

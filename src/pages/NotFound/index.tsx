@@ -1,6 +1,6 @@
 
 import { MainTemplate } from '../../templates/MainTemplate'
-import { Conteiner } from '../../components/Container'
+import { Container } from '../../components/Container'
 import { GenericHtml } from '../../components/GenericHtml'
 import { Heading } from '../../components/Heading'
 import { RouterLink } from '../../components/RouterLink'
@@ -10,7 +10,7 @@ export function NotFound() {
   return (
     <>
       <MainTemplate>
-        <Conteiner>
+        <Container>
           <GenericHtml >
             <Heading>404 - Página não encontrada 🚀</Heading>
             <p>
@@ -35,7 +35,7 @@ export function NotFound() {
               internet, será que ela existiu de verdade?" 🤔💭
             </p>
           </GenericHtml>
-        </Conteiner>
+        </Container>
       </MainTemplate>
     </>
   )
