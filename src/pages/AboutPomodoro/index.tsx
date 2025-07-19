@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Container } from '../../components/Container';
 import { GenericHtml } from '../../components/GenericHtml';
 import { Heading } from '../../components/Heading';
@@ -5,6 +6,9 @@ import { RouterLink } from '../../components/RouterLink';
 import { MainTemplate } from '../../templates/MainTemplate';
 
 export function AboutPomodoro() {
+  useEffect(() => {
+    document.title = 'Entenda a técnica Pomodoro - Chronos Pomodoro'
+  }, [])
   return (
     <MainTemplate>
       <Container>
@@ -19,7 +23,7 @@ export function AboutPomodoro() {
             garantir descansos para evitar o cansaço mental.
           </p>
 
-          <img src='https://placehold.co/1920x1080' alt='' />
+          <img src='https://www.flickr.com/photo_download.gne?id=14652166615&secret=048401e799&size=l&source=photoPageEngagement' alt='' />
 
           <h2>Como funciona o Pomodoro tradicional?</h2>
           <ul>

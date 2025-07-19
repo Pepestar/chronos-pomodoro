@@ -4,9 +4,13 @@ import { Container } from '../../components/Container'
 import { GenericHtml } from '../../components/GenericHtml'
 import { Heading } from '../../components/Heading'
 import { RouterLink } from '../../components/RouterLink'
+import { useEffect } from 'react'
 
 
 export function NotFound() {
+  useEffect(() => {
+    document.title = 'Pagina não encontrada - Chronos Pomodoro'
+  }, [])
   return (
     <>
       <MainTemplate>
